@@ -22,7 +22,7 @@ body {
   gap: 12px;
 }
 .logo { font-family: 'Noto Serif JP', serif; font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
-.logo-sub { font-size: 13px; color: #888; font-weight: 300; letter-spacing: 0.05em; }
+.logo-sub { font-size: 13px; color: #1a1a1a; font-weight: 400; letter-spacing: 0.05em; }
 .search-wrap { padding: 32px 24px 0; max-width: 780px; margin: 0 auto; }
 .search-box {
   display: flex;
@@ -58,7 +58,7 @@ input {
   animation: spin 0.8s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-.loading-text { font-size: 12px; color: #aaa; }
+.loading-text { font-size: 13px; color: #1a1a1a; }
 .error {
   max-width: 780px; margin: 16px auto 0;
   padding: 12px 24px; background: #fff3f3;
@@ -73,12 +73,12 @@ input {
 }
 .main-tag-name { font-family: 'Noto Serif JP', serif; font-size: 22px; font-weight: 600; margin-bottom: 8px; }
 .main-tag-count { font-size: 32px; font-weight: 600; color: #41c9b4; letter-spacing: -1px; }
-.main-tag-count-sub { font-size: 14px; color: #888; font-weight: 300; }
+.main-tag-count-sub { font-size: 14px; color: #1a1a1a; font-weight: 300; }
 
 /* セクションタイトル */
 .section-title {
-  font-size: 13px; font-weight: 500; color: #888;
-  letter-spacing: 0.1em; margin-bottom: 16px; text-transform: uppercase;
+  font-size: 13px; font-weight: 500; color: #1a1a1a;
+  letter-spacing: 0.05em; margin-bottom: 16px;
 }
 
 /* 芋づる展開エリア */
@@ -101,7 +101,7 @@ input {
   font-size: 13px; color: #41c9b4; font-weight: 500;
   margin-left: auto;
 }
-.branch-count-label { font-size: 11px; color: #aaa; font-weight: 300; }
+.branch-count-label { font-size: 11px; color: #1a1a1a; font-weight: 300; }
 
 .sub-tags {
   display: flex; flex-wrap: wrap; gap: 8px;
@@ -110,7 +110,7 @@ input {
 .sub-tag {
   background: #f5f3ef; border: 1px solid #e8e4de;
   border-radius: 40px; padding: 5px 12px;
-  font-size: 12px; color: #555;
+  font-size: 12px; color: #1a1a1a;
   cursor: pointer;
   font-family: 'Noto Sans JP', sans-serif;
   display: inline-flex; align-items: center; gap: 5px;
@@ -119,7 +119,7 @@ input {
 .sub-tag:hover { background: #e8f8f5; border-color: #41c9b4; color: #1a1a1a; }
 .sub-tag-count { font-size: 13px; color: #41c9b4; font-weight: 500; }
 
-.no-related { padding: 14px 20px; font-size: 13px; color: #bbb; }
+.no-related { padding: 14px 20px; font-size: 13px; color: #1a1a1a; }
 
 .footer { text-align: center; font-size: 13px; color: #1a1a1a; margin-top: 40px; line-height: 2; }
 .hidden { display: none; }
@@ -135,7 +135,7 @@ input {
 <div class="search-wrap">
   <div class="search-box">
     <span class="hash">#</span>
-    <input type="text" id="tagInput" placeholder="ハッシュタグを入力（例：エッセイ）" />
+    <input type="text" id="tagInput" placeholder="ハッシュタグを入力" />
     <button class="btn" id="searchBtn" onclick="doSearch()">検索</button>
   </div>
   <div class="loading hidden" id="loading">
@@ -157,7 +157,8 @@ input {
 
 <div class="footer">
   ※ note非公式APIを使用しています。データはリアルタイムで取得されます。<br>
-  このツールを作った人 → <a href="https://note.com/ai48start" target="_blank" rel="noopener noreferrer" style="color:#41c9b4; font-weight:500; text-decoration:none;">@ai48start のnote</a>
+  製作者：<a href="https://note.com/ai48start" target="_blank" rel="noopener noreferrer" style="color:#41c9b4; font-weight:500; text-decoration:none;">泰祥屋note店</a><br>
+  <a href="https://note.com/ai48start" target="_blank" rel="noopener noreferrer" style="color:#41c9b4; font-weight:500; text-decoration:none;">https://note.com/ai48start</a>
 </div>
 
 <script>
